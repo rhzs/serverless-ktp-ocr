@@ -1,4 +1,4 @@
-## Serverless Indonesia KTP OCR with GCP
+## Serverless Indonesian KTP OCR with GCP
 
 This is reproducible work from [Ekstraksi Informasi e-KTP dengan Google Cloud Function dan Cloud Vision API](https://medium.com/@imrenagi/ekstraksi-informasi-e-ktp-dengan-google-cloud-function-dan-cloud-vision-api-4655db21d084). It also contains code fix to match with ES6 compliant module usages.
 
