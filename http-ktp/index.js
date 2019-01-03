@@ -1,17 +1,15 @@
-
-//Start of Image Uploader
 const path = require('path');
 const os = require('os');
 const fs = require('fs');
 
-var Busboy = require('busboy');
+const Busboy = require('busboy');
 const { Storage } = require('@google-cloud/storage');
 const storage = new Storage();
 const uuidv1 = require('uuid/v1');
 
 exports.uploadKtp = (req, res) => {
   if (req.method === 'POST') {
-    var busboy = new Busboy({ headers: req.headers });
+    const busboy = new Busboy({ headers: req.headers });
     const tmpdir = os.tmpdir();
     const fields = {};
     const uploads = {};
@@ -85,4 +83,3 @@ exports.uploadKtp = (req, res) => {
     res.status(405).end();
   }
 };
-//End of Image Uploader

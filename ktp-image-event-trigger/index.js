@@ -1,5 +1,3 @@
-
-//Start of Image Text Extractor
 const vision = require('@google-cloud/vision');
 const { PubSub } = require(`@google-cloud/pubsub`);
 
@@ -18,9 +16,9 @@ exports.processImageFromGCSEvent = (event, callback) => {
     console.log(`File ${file.name} uploaded.`);
     const gcsPath = `gs://${file.bucket}/${file.name}`
 
-    var fileNameArr =  file.name.split("/");  //{user_id}/{operation_id}.*
-    var fileName = fileNameArr[fileNameArr.length - 1];
-    var operationId = fileName.split(".")[0];
+    const fileNameArr =  file.name.split("/");  //{user_id}/{operation_id}.*
+    const fileName = fileNameArr[fileNameArr.length - 1];
+    const operationId = fileName.split(".")[0];
 
     client
       .textDetection(gcsPath)
