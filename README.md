@@ -46,4 +46,4 @@ View Stackdriver logs from `extract-ktp` function.
 
 ### Love it?
 
-Send your feedback to me.
+Please support me by **stars* this Github repo. Thank you!
