@@ -58,7 +58,7 @@ exports.uploadKtp = (req, res) => {
         destination: destination
       };
       //uploading to cloud storage
-      const bucketName = "uploaded_ektp"
+      const bucketName = "ektp"
       storage
       .bucket(bucketName)
       .upload(file, options)

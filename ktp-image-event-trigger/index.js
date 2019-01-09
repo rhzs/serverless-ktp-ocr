@@ -27,11 +27,12 @@ exports.processImageFromGCSEvent = (event, callback) => {
         const data = JSON.stringify({
           event_type: 'text.recognized',
           data: {
-            results: results[0].textAnnotations,
+            results: detections,
             image_path: gcsPath,
             operation_id: operationId
-          }
+          },
         });
+
         console.log(data)
         const dataBuffer = Buffer.from(data);
         return pubsub

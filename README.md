@@ -9,7 +9,7 @@ This is reproducible work from [Ekstraksi Informasi e-KTP dengan Google Cloud Fu
 ### Pre-requisites
 
 1. Google Cloud Account
-2. `gcloud` CLI
+2. `gcloud` CLI, MacOS Homebrew `brew install gcloud`
 3. Create New Google Cloud project `gcloud projects create ektp-ocr`
 4. Enable Google Cloud Functions `gcloud services enable cloudfunctions.googleapis.com`
 5. Enable Google Cloud Storage `gcloud services enable storage-api.googleapis.com` `gcloud services enable storage-component.googleapis.com`, create bucket name `uploaded_ktp`
