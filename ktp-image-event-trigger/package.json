@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@google-cloud/pubsub": "^0.22.2",
+    "@google-cloud/pubsub": "^0.30.0",
     "@google-cloud/vision": "^0.24.0"
   }
 }
