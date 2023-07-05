@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@google-cloud/pubsub": "^0.30.1",
-    "@google-cloud/vision": "^0.24.0"
+    "@google-cloud/pubsub": "^3.7.1",
+    "@google-cloud/vision": "^3.1.4"
   }
 }
